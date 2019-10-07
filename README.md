@@ -8,3 +8,5 @@
 6. In the `KEY` field enter `access_token`.
 7. In the `VALUE` field enter your unique access token.
 8. Make a request!
+
+https://medium.com/@annthurium/getting-started-with-the-strava-api-a-tutorial-f3909496cd2d
