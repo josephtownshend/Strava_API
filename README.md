@@ -1,5 +1,9 @@
 # Strava_API
 
+This is a repo to document an exploration of the Strava API.
+
+### First Steps...
+
 1. Set up an account on Strava.
 2. Create an App on Strava - this gives you access to the API.
 3. Download Postman.
