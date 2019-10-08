@@ -14,3 +14,10 @@ This is a repo to document an exploration of the Strava API.
 8. Make a request!
 
 https://medium.com/@annthurium/getting-started-with-the-strava-api-a-tutorial-f3909496cd2d
+
+
+### OAuth tokens...
+
+One thing I noticed was that you need to use a token for this API, I haven't worked in this way yet so I did a bit of research. I am aware that you should not keep your token in your code as if you commit to version control a bot may scrape your repo and find your token. So I need to find out how to obscure it. 
+
+I found that you can store it in an environment variable in a different file then use `.gitignore` to disclude the file from GitHub. 
