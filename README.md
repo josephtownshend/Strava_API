@@ -18,6 +18,15 @@ https://medium.com/@annthurium/getting-started-with-the-strava-api-a-tutorial-f3
 
 ### OAuth tokens...
 
-One thing I noticed was that you need to use a token for this API, I haven't worked in this way yet so I did a bit of research. I am aware that you should not keep your token in your code as if you commit to version control a bot may scrape your repo and find your token. So I need to find out how to obscure it. 
+One thing I noticed was that you need to use a token for this API, I haven't worked in this way yet so I did a bit of research. I am aware that you should not keep your token in your code as if you commit to version control a bot may scrape your repo and find your token. So I need to find out how to obscure it.
 
-I found that you can store it in an environment variable in a different file then use `.gitignore` to disclude the file from GitHub. 
+I found that you can store it in an environment variable in a different file then use `.gitignore` to disclude the file from GitHub.
+
+
+$ npm install --save axios
+$ npm install --save-dev mocha chai nock
+
+Axios - A Promise based HTTP client for the browser and node.js
+Mocha - A popular Node.js testing framework.
+Chai - A BDD / TDD assertion library for Node.js
+Nock - A HTTP mocking and expectations library for Node.js
