@@ -1,5 +1,6 @@
+require('dotenv').config()
 const expect = require('chai').expect;
-
+const api_token = process.env.API_TOKEN;
 const nock = require('nock');
 
 const getUser = require('../index').getUser;
@@ -7,21 +8,21 @@ const response = require('./response');
 
 describe('Get User tests', () => {
   beforeEach(() => {
-    nock('https://api.github.com')
-      .get('/users/octocat')
+    nock('https://www.strava.com/api/v3')
+      .get('/athletes/joseph_townshend/?access_token='+ api_token)
       .reply(200, response);
   });
 
   it('Get a user by username', () => {
-    return getUser('octocat')
+    return getUser('joseph_townshend')
       .then(response => {
         //expect an object back
         expect(typeof response).to.equal('object');
 
         //Test result of name, company and location for the response
-        expect(response.name).to.equal('The Octocat')
-        expect(response.company).to.equal('GitHub')
-        expect(response.location).to.equal('San Francisco')
+        expect(response.firstname).to.equal('joseph')
+        expect(response.lastname).to.equal('townshend')
+        expect(response.city).to.equal('London')
       });
   });
 });

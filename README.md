@@ -23,6 +23,9 @@ One thing I noticed was that you need to use a token for this API, I haven't wor
 I found that you can store it in an environment variable in a different file then use `.gitignore` to disclude the file from GitHub.
 
 
+
+
+
 $ npm install --save axios
 $ npm install --save-dev mocha chai nock
 
@@ -30,3 +33,7 @@ Axios - A Promise based HTTP client for the browser and node.js
 Mocha - A popular Node.js testing framework.
 Chai - A BDD / TDD assertion library for Node.js
 Nock - A HTTP mocking and expectations library for Node.js
+
+Following this tutorial I got a mocked API request from github working and passing a test.
+
+https://scotch.io/tutorials/nodejs-tests-mocking-http-requests
