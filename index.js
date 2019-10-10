@@ -10,7 +10,7 @@ console.log(process.env)
 module.exports = {
   getUser(username) {
     return axios
-      .get('https://www.strava.com/api/v3/athletes/joseph_townshend/?access_token='+ api_token)
+      .get('https://www.strava.com/api/v3/athletes/'+ username +'/?access_token='+ api_token)
       .then(res => res.data)
       .catch(error => console.log(error));
   }
