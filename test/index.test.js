@@ -13,13 +13,13 @@ describe('Get User tests', () => {
       .reply(200, response);
   });
 
-  it('Get a user by username', () => {
+  it('Gets a user by username', () => {
     return getUser('joseph_townshend')
       .then(response => {
         //expect an object back
         expect(typeof response).to.equal('object');
 
-        //Test result of name, company and location for the response
+        //Test result of firstname, lastname and city for the response
         expect(response.firstname).to.equal('joseph')
         expect(response.lastname).to.equal('townshend')
         expect(response.city).to.equal('London')
