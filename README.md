@@ -1,4 +1,4 @@
-# Strava_API
+# Strava_APIP_Exploration
 
 This is a repo to document an exploration of the Strava API.
 
