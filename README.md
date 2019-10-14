@@ -44,3 +44,6 @@ Nock - A HTTP mocking and expectations library for Node.js
 ### Next Steps...
 
 Quite happy with progress on this so far. The approach and handling of the API is much better than I've done before. I need to get it returning something useful - I'm not sure what this could be. I'm going to spend a bit of time with the endpoints and see if I can find something useful.
+
+Found the Developer's playground for Strava's API - looks like a great tool for inspiration.
+https://developers.strava.com/playground/
