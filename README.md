@@ -40,3 +40,7 @@ Axios - A Promise based HTTP client for the browser and node.js
 Mocha - A popular Node.js testing framework.
 Chai - A BDD / TDD assertion library for Node.js
 Nock - A HTTP mocking and expectations library for Node.js
+
+### Next Steps...
+
+Quite happy with progress on this so far. The approach and handling of the API is much better than I've done before. I need to get it returning something useful - I'm not sure what this could be. I'm going to spend a bit of time with the endpoints and see if I can find something useful.
