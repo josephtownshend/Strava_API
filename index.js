@@ -8,17 +8,10 @@ const api_token = process.env.API_TOKEN;
 console.log(process.env)
 
 module.exports = {
-  getUser(username) {
+  getSegment(segmentid) {
     return axios
-      .get('https://www.strava.com/api/v3/segments/'+ username +'?access_token='+ api_token)
+      .get('https://www.strava.com/api/v3/segments/'+ segmentid +'?access_token='+ api_token)
       .then(res => res.data)
       .catch(error => console.log(error));
   }
-
-  // getKom(segmentId) {
-  //   return axios
-  //     .get('https://www.strava.com/api/v3/segments/'+ segmentId +'learderboard' +'/?access_token='+ api_token)
-  //     .then(res => res.data)
-  //     .catch(error => console.log(error));
-  // }
 };
