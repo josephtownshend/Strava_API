@@ -5,6 +5,8 @@ const nock = require('nock');
 
 const getUser = require('../index').getUser;
 const response = require('./response');
+const getKom = require('../index').getKom;
+const reponse_kom = require('./response_kom');
 
 describe('Get User tests', () => {
   beforeEach(() => {
@@ -26,3 +28,22 @@ describe('Get User tests', () => {
       });
   });
 });
+//
+// describe('Get leaderboard tests', () => {
+//   beforeEach(() => {
+//     nock('https://www.strava.com/api/v3')
+//       .get('/segments/229781/leaderboard/?access_token='+ api_token)
+//       .reply(200, response);
+//   });
+//
+//   it('Gets the data from a segment', () => {
+//     return getKom(229781)
+//       .then(response => {
+//         //expect an object back
+//         expect(typeof response).to.equal('object');
+//
+//         //Test result of firstname, lastname and city for the response
+//         expect(response.kom_type).to.equal('kom')
+//       });
+//   });
+// });

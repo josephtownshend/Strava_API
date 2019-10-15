@@ -15,10 +15,10 @@ module.exports = {
       .catch(error => console.log(error));
   }
 
-  getKom(segmentId) {
-    return axios
-      .get('https://www.strava.com/api/v3/segments/'+ segmentId +'learderboard' +'/?access_token='+ api_token)
-      .then(res => res.data)
-      .catch(error => console.log(error));
-  }
+  // getKom(segmentId) {
+  //   return axios
+  //     .get('https://www.strava.com/api/v3/segments/'+ segmentId +'learderboard' +'/?access_token='+ api_token)
+  //     .then(res => res.data)
+  //     .catch(error => console.log(error));
+  // }
 };

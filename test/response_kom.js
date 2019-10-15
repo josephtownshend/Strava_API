@@ -1,4 +1,4 @@
-{
+module.exports = {
    "effort_count":39231,
    "entry_count":39231,
    "kom_type":"kom",
