@@ -11,20 +11,20 @@ const reponse_kom = require('./response_kom');
 describe('Get User tests', () => {
   beforeEach(() => {
     nock('https://www.strava.com/api/v3')
-      .get('/athletes/joseph_townshend/?access_token='+ api_token)
+      .get('/segments/229781?access_token='+ api_token)
       .reply(200, response);
   });
 
   it('Gets a user by username', () => {
-    return getUser('joseph_townshend')
+    return getUser('229781')
       .then(response => {
         //expect an object back
         expect(typeof response).to.equal('object');
 
         //Test result of firstname, lastname and city for the response
-        expect(response.firstname).to.equal('joseph')
-        expect(response.lastname).to.equal('townshend')
-        expect(response.city).to.equal('London')
+        expect(response.name).to.equal('Hawk Hill')
+        // expect(response.lastname).to.equal('townshend')
+        // expect(response.city).to.equal('London')
       });
   });
 });
