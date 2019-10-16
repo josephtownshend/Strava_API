@@ -7,6 +7,7 @@ app.use(express.static('public'));
 const api_token = process.env.API_TOKEN;
 console.log(process.env)
 
+
 module.exports = {
   getSegment(segmentid) {
     return axios
