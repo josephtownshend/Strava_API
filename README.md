@@ -1,6 +1,6 @@
 # Strava_API_Exploration
 
-This is a repo to document an exploration of the Strava API.
+This is a repo to document an exploration of the Strava API using Node.Js
 
 ### First Steps...
 
@@ -50,3 +50,5 @@ Found the Developer's playground for Strava's API - looks like a great tool for 
 
 Whilst playing around with the playground I found I could search for segment leaderboadrs. From this I think I can return the KOM or the leader of the board. Whilst this isn't particularly exciting it does give me some direction for the exploration.
 `https://www.strava.com/api/v3/segments/229781/leaderboard?access_token=<xxxx>`
+
+So today I realised that you can't use Node for anything frontend - which is obvious with it being the server side implementation of JS. What I need to do is have a React frontend, Express server and Node backend. I'm going to try and find a tutorial that will help me get that running and then transfer this project over to that.
